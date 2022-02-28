@@ -37,7 +37,7 @@ This is a simple landing page for PJ Studio. :)
 
 * [HTML](https://html.spec.whatwg.org/)
 * [CSS](https://www.w3.org/TR/CSS/#css)
-* [SASS soon](https://sass-lang.com/)
+* [SASS](https://sass-lang.com/) soon
 * [JS](https://www.javascript.com/)
 * [jQuery](https://jquery.com/)
 
