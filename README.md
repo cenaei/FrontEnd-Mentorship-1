@@ -4,7 +4,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/cenaei/frontend-mentorship-challenge/">
-    <img src="screenshot.png" alt="Logo" width="400" height="250">
+    <img src="Screenshot.png" alt="Logo" width="400" height="250">
   </a>
 
 <h3 align="center">Frontend Mentorship Program</h3>
