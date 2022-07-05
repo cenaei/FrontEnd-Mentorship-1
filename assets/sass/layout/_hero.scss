@@ -1,12 +1,7 @@
 .hero {
   max-width: 1900px;
   &__wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-column-gap: 10rem;
-    grid-row-gap: 0px;
-    padding: 5rem 10rem;
+    @include grid(950px);
   }
   &__left {
     &--item {
