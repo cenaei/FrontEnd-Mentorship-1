@@ -36,9 +36,6 @@
     &--third {
       display: flex;
       flex-direction: row;
-      margin: 1rem 0;
-      border-radius: 50rem !important; /* Border Raduis is not Working!!! :( */
-      perspective: 1px;
       &:hover {
         transition: all 0.5s ease-in-out;
         box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.192);
