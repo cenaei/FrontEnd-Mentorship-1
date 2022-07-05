@@ -56,6 +56,5 @@
 .card__active {
   transition: all 0.3s ease-in-out;
   box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.192);
-  -webkit-box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.192);
   transform: translateX(-1rem);
 }
