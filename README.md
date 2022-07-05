@@ -39,7 +39,6 @@ A Web & Mobile Design Development
 * [HTML](https://html.spec.whatwg.org/)
 * [SASS](https://sass-lang.com/) 
 * [JS](https://www.javascript.com/)
-* [jQuery](https://jquery.com/)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
