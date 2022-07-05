@@ -10,7 +10,7 @@
 <h3 align="center">Frontend Mentorship Program</h3>
 
   <p align="center">
-    My Practice Codes for Frontend-Mentorship-Program with Dan Salahi!
+    with <a href="https://github.com/DanSalahi">Dan Salahi </a>!
     <br />
     <a href="https://github.com/cenaei"><strong>More by me »</strong></a>
     <br />
@@ -28,6 +28,7 @@
 ## About The Project
 
 This is a simple landing page for PJ Studio. :)
+A Web & Mobile Design Development
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -36,8 +37,7 @@ This is a simple landing page for PJ Studio. :)
 ### Built With
 
 * [HTML](https://html.spec.whatwg.org/)
-* [CSS](https://www.w3.org/TR/CSS/#css)
-* [SASS](https://sass-lang.com/) soon
+* [SASS](https://sass-lang.com/) 
 * [JS](https://www.javascript.com/)
 * [jQuery](https://jquery.com/)
 
@@ -48,7 +48,7 @@ This is a simple landing page for PJ Studio. :)
 <!-- CONTACT -->
 ## Contact
 
-Sina Sangiji - [@cenaei](https://twitter.com/twitter_handle) - sina.sangiji@gmail.com
+Sina Sangiji - [Twitter](https://twitter.com/twitter_handle) - sina.sangiji@gmail.com
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
