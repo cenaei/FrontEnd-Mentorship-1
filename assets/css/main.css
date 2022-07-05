@@ -489,25 +489,40 @@ i.box--testing {
   border-radius: 0.7rem;
 }
 
-.offers__wrapper {
+.offers {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 5rem 2rem;
+}
+
+.offers__topwrapper h2 {
+  font-size: 3rem;
+}
+
+.offers__wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 10rem;
+  grid-row-gap: 0px;
+  padding: 2rem 10rem;
 }
 
 .offers__item--left img {
-  max-width: 55vw;
-  max-height: 40vh;
+  max-width: 100%;
 }
 
 .offers__item--right {
@@ -527,9 +542,7 @@ i.box--testing {
   max-width: 40vw;
 }
 
-.offers__right--first,
-.offers__right--second,
-.offers__right--third {
+.offers__right--first, .offers__right--second, .offers__right--third {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -542,6 +555,15 @@ i.box--testing {
   /* Border Raduis is not Working!!! :( */
   -webkit-perspective: 1px;
           perspective: 1px;
+}
+
+.offers__right--first:hover, .offers__right--second:hover, .offers__right--third:hover {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  -webkit-box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.192);
+          box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.192);
+  -webkit-transform: translateX(0.5rem);
+          transform: translateX(0.5rem);
 }
 
 .offers__line--first {
@@ -559,20 +581,9 @@ i.box--testing {
   width: 1rem;
 }
 
-.offers__content--first,
-.offers__content--second,
-.offers__content--third {
+.offers__content--first, .offers__content--second, .offers__content--third {
   padding: 3rem;
   background-color: #fff;
-}
-
-.card__active {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  -webkit-box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.192);
-          box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.192);
-  -webkit-transform: translateX(-1rem);
-          transform: translateX(-1rem);
 }
 
 .web__wrapper {
