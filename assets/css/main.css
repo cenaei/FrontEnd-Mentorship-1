@@ -163,28 +163,25 @@ a {
           transform-origin: bottom left;
 }
 
-#hero {
+.hero {
   /* min-height: 88vh; */
   /* padding: ; */
-  scroll-margin-top: 10rem;
 }
 
 .hero__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 10rem;
+  grid-row-gap: 0px;
+  padding: 5rem 10rem;
 }
 
 .hero__left--item {
+  position: static;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -212,6 +209,18 @@ a {
   font-size: 2rem;
 }
 
+.hero__right--item {
+  opacity: 0.9rem;
+}
+
+.hero__right--item img {
+  max-width: 60%;
+  position: relative;
+  left: 50;
+  -webkit-transform: translateX(-50);
+          transform: translateX(-50);
+}
+
 .left--item__demo {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -235,13 +244,47 @@ a {
   margin: 0 1rem;
 }
 
-.hero__right--item {
-  opacity: 0.9rem;
+.animation__hero {
+  position: relative;
 }
 
-.hero__right--item img {
-  max-width: 50vw;
-  max-height: 50vh;
+.animation__hero h1 {
+  position: absolute;
+}
+
+.animation__hero h1:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #181131;
+}
+
+.animation__hero h1:nth-child(2) {
+  color: #181131;
+  -webkit-animation: animate 4s ease-in-out infinite;
+          animation: animate 4s ease-in-out infinite;
+}
+
+@-webkit-keyframes animate {
+  0%,
+  100% {
+    -webkit-clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
+}
+
+@keyframes animate {
+  0%,
+  100% {
+    -webkit-clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 45%, 16% 44%, 33% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
+  }
+  50% {
+    -webkit-clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+            clip-path: polygon(0% 60%, 15% 65%, 34% 66%, 51% 62%, 67% 50%, 84% 45%, 100% 46%, 100% 100%, 0% 100%);
+  }
 }
 
 #our-process {
