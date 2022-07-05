@@ -1,6 +1,8 @@
 @import "sass-utils/variables";
 
-@import "layout/layout";
+@import "base/reset";
+@import "base/base";
+
 @import "layout/header";
 @import "layout/hero";
 @import "layout/process";

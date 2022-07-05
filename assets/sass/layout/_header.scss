@@ -1,42 +1,44 @@
-#header {
+.header {
   min-height: 10vh;
+  width: 100%;
 }
 
 .navbar {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-#navbar {
   position: fixed;
   background-color: #fafafa;
   z-index: 2;
+  .nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+  &__logo {
+    img {
+      height: 7rem;
+      margin-top: 1rem;
+    }
+  }
+  &__lists {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1.3rem;
+  }
 }
 
-.navbar__logo img {
-  height: 7rem;
-  margin-top: 1rem;
-}
-
-.nav__lists {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-.nav__list {
-  margin: 0 0.7rem;
-}
-
-.nav__link {
-  color: $darkColor;
-  transition: all 0.4s ease-in-out;
-}
-
-.nav__link:hover {
-  color: $primaryColor;
+.list {
+  &__item {
+    margin: 0 0.7rem;
+  }
+  &__link {
+    color: $darkColor;
+    transition: all 0.25s ease-in-out;
+    &:hover {
+      color: $primaryColor;
+    }
+  }
 }
 
 .hover-underline-animation {
@@ -46,7 +48,7 @@
 }
 
 .hover-underline-animation:after {
-  content: '';
+  content: "";
   position: absolute;
   width: 100%;
   transform: scaleX(0);
