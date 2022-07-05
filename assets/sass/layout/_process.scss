@@ -13,13 +13,13 @@
   font-weight: 700;
   line-height: 3.5rem;
   margin-bottom: 1.5rem;
-  color: var(--dark-color);
+  color: $darkColor;
 }
 
 .process__item p {
   font-size: 1.8rem;
   opacity: 0.9;
-  color: var(--secondary-color);
+  color: $secondaryColor;
 }
 
 .process__item--box {
@@ -36,20 +36,20 @@
   padding: 1.5rem;
   border-radius: 1rem;
   margin-bottom: 2rem;
-  color: var(--light-color);
+  color: $lightColor;
 }
 
 .process__item--box h3 {
   font-size: 2rem;
   font-weight: 600;
-  color: var(--dark-color);
+  color: $darkColor;
   margin-bottom: 1.5rem;
 }
 
 .process__item--box p {
   font-size: 1.5rem;
   font-weight: 400;
-  color: var(--secondary-color);
+  color: $secondaryColor;
   margin-bottom: 1.5rem;
 }
 

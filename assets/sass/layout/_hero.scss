@@ -19,13 +19,13 @@
 .hero__left--item h1 {
   font-size: 7.5rem;
   font-weight: 700;
-  color: var(--dark-color);
+  color: $darkColor;
   margin-bottom: 2.5rem;
   line-height: 8rem;
 }
 
 .hero__left--item p {
-  color: var(--secondary-color);
+  color: $secondaryColor;
   font-size: 2rem;
 }
 

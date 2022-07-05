@@ -1,0 +1,61 @@
+.offers__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5rem 2rem;
+}
+
+.offers__item--left img {
+  max-width: 55vw; 
+  max-height: 40vh;
+}
+
+.offers__item--right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 40vw; 
+
+}
+
+.offers__right--first,
+.offers__right--second,
+.offers__right--third {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem 0;
+  border-radius: 50rem !important; /* Border Raduis is not Working!!! :( */
+  perspective: 1px;
+}
+
+.offers__line--first {
+  background-color: orange;
+  width: 1rem;
+}
+
+.offers__line--second {
+  background-color: purple;
+  width: 1rem;
+}
+
+.offers__line--third {
+  background-color: green;
+  width: 1rem;
+}
+
+
+.offers__content--first,
+.offers__content--second,
+.offers__content--third {
+  padding: 3rem;
+  background-color: #fff;
+}
+
+.card__active {
+  transition: all 0.3s ease-in-out;
+  box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.192);
+  -webkit-box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.192);
+  transform: translateX(-1rem);
+}
