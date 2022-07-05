@@ -1,16 +1,19 @@
 .header {
-  min-height: 10vh;
-  width: 100%;
+  position: sticky;
+  top: 0;
+  margin: 0 auto;
+  padding: 0 10rem;
+  max-width: 1900px;
+  background-color: #fafafa;
+  z-index: 2;
 }
 
 .navbar {
-  position: fixed;
-  background-color: #fafafa;
-  z-index: 2;
+  width: 100%;
   .nav {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
   &__logo {
