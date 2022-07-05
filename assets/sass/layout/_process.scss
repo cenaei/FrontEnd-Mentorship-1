@@ -1,56 +1,70 @@
-#our-process {
-  min-height: 20vh;
-}
-
-.process__wrapper {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-}
-.process__item h2 {
-  font-size: 3.5rem;
-  font-weight: 700;
-  line-height: 3.5rem;
-  margin-bottom: 1.5rem;
-  color: $darkColor;
-}
-
-.process__item p {
-  font-size: 1.8rem;
-  opacity: 0.9;
-  color: $secondaryColor;
-}
-
-.process__item--box {
-  padding: 2.5rem;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1.5rem;
-  transition: all 0.3s ease-in-out;
-}
-
-.process__item--box i {
-  padding: 1.5rem;
-  border-radius: 1rem;
-  margin-bottom: 2rem;
-  color: $lightColor;
-}
-
-.process__item--box h3 {
-  font-size: 2rem;
-  font-weight: 600;
-  color: $darkColor;
-  margin-bottom: 1.5rem;
-}
-
-.process__item--box p {
-  font-size: 1.5rem;
-  font-weight: 400;
-  color: $secondaryColor;
-  margin-bottom: 1.5rem;
+.process {
+  max-width: 1900px;
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr;
+    grid-column-gap: 15px;
+    grid-row-gap: 0px;
+    padding: 5rem 10rem;
+  }
+  &__item {
+    h2 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      line-height: 3.5rem;
+      margin-bottom: 1.5rem;
+      color: $darkColor;
+    }
+    p {
+      font-size: 1.8rem;
+      opacity: 0.9;
+      color: $secondaryColor;
+    }
+    &--box {
+      padding: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      border-radius: 1.5rem;
+      transition: all 0.3s ease-in-out;
+      i {
+        padding: 1.5rem;
+        border-radius: 1rem;
+        margin-bottom: 2rem;
+        color: $lightColor;
+      }
+      h3 {
+        font-size: 2rem;
+        font-weight: 600;
+        color: $darkColor;
+        margin-bottom: 1.5rem;
+      }
+      p {
+        font-size: 1.5rem;
+        font-weight: 400;
+        color: $secondaryColor;
+        margin-bottom: 1.5rem;
+      }
+    }
+    &:hover {
+      border-radius: 3rem;
+      transition: all 0.3s ease-in-out;
+      box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
+      transform: translateY(-0.3rem);
+    }
+  }
+  &__title {
+    @extend .process__item;
+    margin: auto;
+    &:hover {
+      border-radius: 0;
+      transition: none;
+      box-shadow: none;
+      transform: none;
+    }
+  }
 }
 
 i.box--daily {
@@ -63,12 +77,4 @@ i.box--shield {
 
 i.box--testing {
   background-color: #e74c3c;
-}
-
-.process__active {
-  transition: all 0.3s ease-in-out;
-  box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
-  -webkit-box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
-  transform: translateY(-2rem);
-  /* z-index: 5; */ /* on hover it goes below hero image, it didn't fix with z-index */
 }

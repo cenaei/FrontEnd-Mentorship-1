@@ -164,8 +164,7 @@ a {
 }
 
 .hero {
-  /* min-height: 88vh; */
-  /* padding: ; */
+  max-width: 1900px;
 }
 
 .hero__wrapper {
@@ -287,26 +286,23 @@ a {
   }
 }
 
-#our-process {
-  min-height: 20vh;
+.process {
+  max-width: 1900px;
 }
 
 .process__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+  grid-column-gap: 15px;
+  grid-row-gap: 0px;
+  padding: 5rem 10rem;
 }
 
-.process__item h2 {
+.process__item h2, .process__title h2 {
   font-size: 3.5rem;
   font-weight: 700;
   line-height: 3.5rem;
@@ -314,7 +310,7 @@ a {
   color: #181131;
 }
 
-.process__item p {
+.process__item p, .process__title p {
   font-size: 1.8rem;
   opacity: 0.9;
   color: #515151;
@@ -361,6 +357,30 @@ a {
   margin-bottom: 1.5rem;
 }
 
+.process__item:hover, .process__title:hover {
+  border-radius: 3rem;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  -webkit-box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
+          box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
+  -webkit-transform: translateY(-0.3rem);
+          transform: translateY(-0.3rem);
+}
+
+.process__title {
+  margin: auto;
+}
+
+.process__title:hover {
+  border-radius: 0;
+  -webkit-transition: none;
+  transition: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-transform: none;
+          transform: none;
+}
+
 i.box--daily {
   background-color: #f39c12;
 }
@@ -371,17 +391,6 @@ i.box--shield {
 
 i.box--testing {
   background-color: #e74c3c;
-}
-
-.process__active {
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
-  -webkit-box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.097);
-  -webkit-transform: translateY(-2rem);
-          transform: translateY(-2rem);
-  /* z-index: 5; */
-  /* on hover it goes below hero image, it didn't fix with z-index */
 }
 
 .mobile__wrapper {
