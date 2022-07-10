@@ -36,9 +36,10 @@
     &--third {
       display: flex;
       flex-direction: row;
+      transition: transform,box-shadow 300ms ease-in-out;
       &:hover {
         transition: all 0.5s ease-in-out;
-        box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.192);
+        box-shadow: .7rem 1rem .7rem .7rem rgba(128, 128, 128, 0.192);
         transform: translateX(.5rem);
       }
     }

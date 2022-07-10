@@ -192,10 +192,11 @@ a {
 .hero__wrapper {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fill];
+      grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
+  overflow: auto;
   grid-column-gap: 10rem;
   grid-row-gap: 0px;
   padding: 5rem 10rem;
@@ -354,8 +355,10 @@ a {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 1.5rem;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: -webkit-transform 0.3s ease-in-out;
+  transition: -webkit-transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out, -webkit-transform 0.3s ease-in-out;
 }
 
 .process__item--box i {
@@ -572,13 +575,17 @@ i.box--testing {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-transition: -webkit-transform,-webkit-box-shadow 300ms ease-in-out;
+  transition: -webkit-transform,-webkit-box-shadow 300ms ease-in-out;
+  transition: transform,box-shadow 300ms ease-in-out;
+  transition: transform,box-shadow 300ms ease-in-out,-webkit-transform,-webkit-box-shadow 300ms ease-in-out;
 }
 
 .offers__right--first:hover, .offers__right--second:hover, .offers__right--third:hover {
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
-  -webkit-box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.192);
-          box-shadow: 3rem 2.5rem 3rem 2rem rgba(128, 128, 128, 0.192);
+  -webkit-box-shadow: 0.7rem 1rem 0.7rem 0.7rem rgba(128, 128, 128, 0.192);
+          box-shadow: 0.7rem 1rem 0.7rem 0.7rem rgba(128, 128, 128, 0.192);
   -webkit-transform: translateX(0.5rem);
           transform: translateX(0.5rem);
 }

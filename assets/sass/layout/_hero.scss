@@ -1,7 +1,7 @@
 .hero {
   max-width: 1900px;
   &__wrapper {
-    @include grid(950px);
+    @include grid(400px);
   }
   &__left {
     &--item {
